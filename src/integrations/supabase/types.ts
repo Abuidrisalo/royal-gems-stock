@@ -14,7 +14,57 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      stock_entries: {
+        Row: {
+          bangles: number
+          bracelets: number
+          created_at: string
+          date: string
+          earrings: number
+          empty_dummies: number
+          free_earrings_spaces: number
+          id: string
+          necklaces: number
+          rings: number
+          sets_rings_and_earrings: number
+          sets_with_bracelets: number
+          sets_with_necklaces: number
+          updated_at: string
+        }
+        Insert: {
+          bangles?: number
+          bracelets?: number
+          created_at?: string
+          date: string
+          earrings?: number
+          empty_dummies?: number
+          free_earrings_spaces?: number
+          id?: string
+          necklaces?: number
+          rings?: number
+          sets_rings_and_earrings?: number
+          sets_with_bracelets?: number
+          sets_with_necklaces?: number
+          updated_at?: string
+        }
+        Update: {
+          bangles?: number
+          bracelets?: number
+          created_at?: string
+          date?: string
+          earrings?: number
+          empty_dummies?: number
+          free_earrings_spaces?: number
+          id?: string
+          necklaces?: number
+          rings?: number
+          sets_rings_and_earrings?: number
+          sets_with_bracelets?: number
+          sets_with_necklaces?: number
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
