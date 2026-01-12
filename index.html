@@ -1,37 +1,92 @@
 <!doctype html>
-<html lang="en"><link rel="manifest" href="/manifest.json">
-<meta name="theme-color" content="#8b5cf6">
-<link rel="apple-touch-icon" href="/icon-192.png">
-<meta name="apple-mobile-web-app-capable" content="yes">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
-    <title>Lovable App</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
-
-    <!-- TODO: Update og:title to match your application name -->
-    <meta property="og:title" content="Lovable App" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Lovable" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <title>Royal Gems Stock</title>
+    <meta name="description" content="Inventory Management" />
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#8b5cf6">
   </head>
-<script>
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js')
-      .then(reg => console.log('SW registered'))
-      .catch(err => console.log('SW error:', err));
-  });
-}
-</script>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
+```
+
+7. **Scroll down**, tap **"Commit changes"**
+8. **Tap** "Commit changes" again
+9. **Wait 2-3 minutes** for Netlify to rebuild
+10. **Check** if you see green ✅ checkmark
+
+---
+
+## 📱 Once Deployment Succeeds
+
+**Send me a screenshot showing:**
+- ✅ Green checkmark in Netlify
+- ✅ "Published" status
+
+**Then I will create:**
+
+### 🎯 New Features I'll Add:
+
+1. **Sales Entry Form**
+   - Select item from dropdown
+   - Enter quantity sold
+   - Click "Record Sale"
+   - Updates stock automatically
+
+2. **Returns Entry Form**
+   - Select item from dropdown
+   - Enter quantity returned
+   - Click "Record Return"
+   - Adds back to stock
+
+3. **Monthly Summary Dashboard**
+   - Total items sold this month
+   - Total items returned this month
+   - Current stock levels
+   - Month-by-month history
+
+4. **Enhanced Item View**
+   - Current stock
+   - Total sold (all time)
+   - Total returned (all time)
+   - Available = Stock - Sold + Returned
+
+5. **Database Updates**
+   - New table for tracking transactions
+   - History of all sales/returns with dates
+
+---
+
+## 📋 What the App Will Look Like
+```
+┌─────────────────────────────────┐
+│   ROYAL GEMS STOCK              │
+├─────────────────────────────────┤
+│                                 │
+│  📊 This Month Summary          │
+│  • Sold: 45 items               │
+│  • Returned: 3 items            │
+│  • Net: -42 items               │
+│                                 │
+├─────────────────────────────────┤
+│                                 │
+│  📦 Item: Diamond Ring          │
+│  • In Stock: 20                 │
+│  • Total Sold: 85               │
+│  • Total Returned: 5            │
+│  • Available: 20                │
+│                                 │
+│  [Record Sale] [Record Return]  │
+│                                 │
+├─────────────────────────────────┤
+│                                 │
+│  📈 Monthly History             │
+│  • January: Sold 45, Returned 3 │
+│  • December: Sold 52, Returned 2│
+│                                 │
+└─────────────────────────────────┘
